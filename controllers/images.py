@@ -5,7 +5,7 @@ from itertools import chain
 from . import db
 
 
-persona  = pd.read_csv(".\data.csv")
+persona  = pd.read_csv("https://raw.githubusercontent.com/Ricardo-Javier-Villegas-Mendieta/Figshare/main/data.csv")
 
 
 registros = pd.read_csv(".\datos_registro.csv")
