@@ -15,7 +15,7 @@ def get_data():
     return persona
 
 def get_test():
-    test = persona.sample(5)
+    test = persona.sample(10)
     return test
 
 def guardar_datos(datos):
