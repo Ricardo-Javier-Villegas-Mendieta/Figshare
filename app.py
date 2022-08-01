@@ -16,7 +16,6 @@ app.config.from_mapping(
     BASE=os.environ.get('DATABASE')
 )
 
-@app.route('/home')
 @app.route('/')
 def index():
     return render_template('home.html')
@@ -34,15 +33,6 @@ def principal():
     id = persona['ID'].tolist()
     return render_template('principal.html', personas = imagen,ids = id)
 
-@app.route('/calificacion')
-def calificacion():
-    persona = images.get_data()
-    imagen = persona['URL'].tolist()
-    id = persona['ID'].tolist()
-    Afro = persona['Afro-American_percentage'].tolist()
-    Europa = persona['European_percentage'].tolist()
-    Indigena = persona['Indigenous_percentage'].tolist()
-    return render_template('calificacion.html', personas = imagen,ids = id, A=Afro, E=Europa, I=Indigena)
 
 @app.route('/agradecimiento')
 def agradecimiento():
