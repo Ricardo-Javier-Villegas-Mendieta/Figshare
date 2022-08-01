@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block content %}
+<!-- Masthead-->
+<header class="masthead bg-dark text-white text-center ">
+   
+    <div class="mensaje container">
+
+        <h1 class="">INDICACIONES</h1>
+        <hr>
+        <p class="separadorTOP">
+            A continuación se presentarán un grupo de imágenes, las cuales presentaran un grupo personas 
+            según vaya avanzando.
+            <BR>
+            Observe con detalle cada una de las imagenes que se desplegaran a continuación y seleccione 
+            si es AFROECUATORIANO, EURODESCENDIENTE, INDIGENA, y MESTIZO.
+            Incremente los valores de similitud a cada etnia según la similitud de los rasgos de la persona.            
+        </p>
+       
+
+        <div class="d-grid gap-2 col-6 mx-auto separadorTOP  ">            
+            <a class="btn" type="button" href="/principal">                     
+                INICIAR                              
+            </a>
+    
+            <a class="btn separadorBOT" type="button" href="/">                     
+                REGRESAR AL INICIO                              
+            </a>
+           
+        </div>
+
+    </div>
+
+</header>
+
+{% endblock %}

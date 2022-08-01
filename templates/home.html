@@ -1,0 +1,62 @@
+{% extends "base.html" %} {% block content %}
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="/">Proyecto - Figshare</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Acerca De</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/instrucciones">Comenzar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+<!-- Masthead-->
+<header class="masthead bg-dark text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img class="masthead-avatar mb-5" src="../static/assets/img/portfolio/iNDIAS[1].jpg" alt="..." />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Proyecto - Figshare</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">Imagenes Faciales Étnicas</p>
+    </div>
+</header>
+<!-- About Section-->
+<section class="page-section mb-0" id="about"><!--bg-primary-->
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase">Acerca</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom"><!-- divider-light-->
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="col-lg-4 ms-auto"><p class="lead">Desarrollo de una aplicación web la cual determinara la comparación de la media de los grupos étnicos del dataset  “Dataset of Ethnic Facial Images of Ecuadorian People” utilizando la técnica  de análisis de varianza “ANOVA” con el fin de comparar la varianza de la media de dichos grupos</p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">Utiliza variables cuantitativas,  también nos permite analizar los datos con observaciones múltiples en la que existen distribuciones normales en cada uno de los grupos, en la prueba estadística de “ANOVA” podemos decir que al menos una de las medias es distinta en comparación a las otras dos teniendo en cuenta que las variables a comparar son: Afro-Ecuadorians, European Descendants, Indigenous</p></div>
+        </div>
+        <!-- About Section Button-->
+        <!-- <div class="text-center mt-4">
+            <a class="btn btn-xl" href="/instrucciones"><!-- btn-outline-light-->
+               <!-- EMPEZAR
+                <i class="fas fa-chevron-circle-right"></i>
+            </a>
+        </div> -->
+    </div>
+</section>
+
+{% endblock %}
